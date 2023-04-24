@@ -1,0 +1,70 @@
+@font-face{
+  font-family: fuente-logo;
+  src: url("../fuente/Doctor\ Glitch.otf");
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  background: url(/PixiesGames/ProyectoFinal/img/3554-videojuegos.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-top: 0px !important;
+}
+#checkTerms {
+  margin-top: 12px;
+}
+
+.titulos {
+  font-size: xxx-large;
+  color: rgb(249, 97, 42);
+  margin-left: 10px;
+}
+
+.formreg {
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    width: 800px;
+    font-size: 1.125rem;
+    text-anchor: middle;
+    padding: 50px;
+}
+
+
+/*navbar*/
+.nav-item:hover {
+  background: rgb(249, 97, 42);
+}
+.dropdown-menu li:hover {
+  background: rgb(249, 97, 42);
+}
+.dropdown-menu a:hover {
+  background-color: transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+  margin-top: 20px;
+  left: 0;
+  display: block;
+}
+
+.logo-nav {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-right: 10px;
+  background-image: linear-gradient(180deg, #abfaf2 0, #8feae6 25%, #6cd8d8 50%, #41c6cb 75%, #00b6c1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "fuente-logo";
+  cursor: pointer;
+}
+
+.img-login{
+  width: 30px;
+}
+
+.pixie-nav {
+  width: 100%;
+}

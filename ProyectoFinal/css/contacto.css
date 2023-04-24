@@ -1,0 +1,83 @@
+
+@font-face{
+    font-family: fuente-logo;
+    src: url("../fuente/Doctor\ Glitch.otf");
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px !important;
+}
+/*nav*/
+.nav-item:hover {
+    background: rgb(249, 97, 42);
+}
+.dropdown-menu li:hover {
+    background: rgb(249, 97, 42);
+}
+.dropdown-menu a:hover {
+    background-color: transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+    margin-top: 20px;
+    left: 0;
+    display: block;
+}
+
+.logo-nav {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 10px;
+    background-image: linear-gradient(180deg, #abfaf2 0, #8feae6 25%, #6cd8d8 50%, #41c6cb 75%, #00b6c1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "fuente-logo";
+    cursor: pointer;
+}
+
+.img-login{
+    width: 30px;
+}
+
+.pixie-nav {
+    width: 100%;
+}
+/*fin del nav*/
+.conteiner {
+    margin-left: 8px;
+}
+#icon {
+    margin: 8px;
+}
+/*footer*/
+footer a {
+    font-weight: 100;
+    line-height: 2;
+}
+
+
+
+@media(max-width:600px) {
+    .fondo-imagen h2{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:900px){
+    .promo {
+        width: 100%;
+        background-color: rgba(12, 12, 12, 0.755);
+        margin: 0px;
+    }
+    .promo p{
+        font-size: medium;
+    }
+    video{
+        position: relative;
+        height: 600px;
+    }
+    #video-promo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/carrito.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Carrito de compras</title>
+  </head>
+ 
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+      <div class="container-fluid">
+        <a class="text-white logo-nav ms-2 py-2">Pixies Games</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0">
+            <li class="nav-item p-3">
+              <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link text-white" aria-current="page" href="./nosotros.html">Nosotros</a>
+            </li>
+
+            <li class="nav-item dropdown p-3">
+              <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Juegos
+              </a>
+              <ul class="dropdown-menu nav-item-drop bg-dark">
+                <li class="p-2"><a class="p-1 dropdown-item text-white" href="../páginas/accion.html">Accion</a></li>
+                <li class="p-2"><a class="p-1 dropdown-item text-white" href="../páginas/aventura.html">Aventura</a></li>
+                <li class="p-2"><a class="p-1 dropdown-item text-white" href="#">Deporte</a></li>
+              </ul>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link text-white" aria-current="page" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+          <figure class="me-4 my-auto img-login">
+            <a href="#">
+              <img class="ms-2 w-100" src="../img/icons8-user-40.png" alt="">
+            </a>
+          </figure>
+          <figure class="me-4 my-auto img-login">
+            <a href="#">
+              <img class="ms-2 w-100" src="../img/icons8-comprar-50.png" alt="">
+            </a>
+          </figure>
+        </div>
+          <form class="d-flex my-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success btn-dark text-white" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <h3></h3>
+    <br />
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Quitar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="../img/deadspace2.webp" alt="error" /> Dead Space 2
+            </td>
+            <td class="align-middle">
+              <input type="number" value="1" min="0" />
+            </td>
+            <td class="align-middle">$12,321.95 ARS</td>
+            <td class="align-middle">
+              <a href="#"><img src="../img/quitar.png" alt="error" /></a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="../img/sims4.png" alt="error" /> The Sims 4</td>
+            <td class="align-middle">
+              <input type="number" value="1" min="0" />
+            </td>
+            <td class="align-middle">$4,799.55 ARS</td>
+            <td class="align-middle">
+              <a href="#"><img src="../img/quitar.png" alt="error" /></a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="../img/wildhearts.jpg" alt="error" /> Wild Hearts</td>
+            <td class="align-middle">
+              <input type="number" value="1" min="0" />
+            </td>
+            <td class="align-middle">$8,999.90 ARS</td>
+            <td class="align-middle">
+              <a href="#"><img src="../img/quitar.png" alt="error" /></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            
+            </td>
+            <td class="align-middle">
+            Subtotal
+            </td>
+            <td class="align-middle">$26,121.40 ARS</td>
+            <td class="align-middle">
+            </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Descuento por promociones (60%)
+            </td>
+            <td class="align-middle">
+            
+            </td>
+            <td class="align-middle" >-$15,672.84 ARS</td>
+            <td class="align-middle">
+            </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+          
+            </td>
+            <td class="align-middle">
+            Total
+            </td>
+            <td class="align-middle">$10,448.56 ARS</td>
+            <td class="align-middle">
+            </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+       
+        <div class="row justify-content-between">
+          <div class="col-sm-2 col-md-4 col-lg-4"  id="volver">
+            <a href="../index.html"><button type="button" class="btn btn-dark btn-lg" >
+              Volver
+            </button></a></div>
+          <div class="col-sm-2 col-md-4 col-lg-4" id="comprar">
+            <a href="../páginas/error.html"><button type="button" class="btn btn-dark btn-lg" >
+              Comprar
+            </button></a>
+          
+          </div>
+        </div>
+      
+    </div>
+    <br>
+    <footer class="bg-dark">
+      <section class="container row pt-5 pb-2">
+        <article class="col-lg-4 col-md-6 col-sm-12">
+          <ul>
+            <li><a class="text-white text-decoration-none" href="">Politica de privacidad </a></li>
+            <li><a class="text-white text-decoration-none" href="">Terminos de uso y condiciones </a></li>
+            <li><a class="text-white text-decoration-none" href="">Politica de privacidad de Google </a></li>
+          </ul>
+        </article>
+        <article class="col-lg-4 col-md-6 col-sm-12">
+          <ul>
+            <li><a class="text-white text-decoration-none" href="">Twitter</a></li>
+            <li><a class="text-white text-decoration-none" href="">Facebook</a></li>
+            <li><a class="text-white text-decoration-none" href="">Instagram</a></li>
+          </ul>
+        </article>
+        <article class="col-lg-4 col-md-6 col-sm-12">
+          <ul>
+            <li><a class="text-white text-decoration-none" href="">Contactanos</a></li>
+            <li><a class="text-white text-decoration-none" href="">Sobre nosotros</a></li>
+            <li><a class="text-white text-decoration-none" href="">Trabaja con nosotros</a></li>
+          </ul>
+        </article>
+        <article class="p-4 col-12 d-flex justify-content-center">
+          <h6 class="text-white mt-4">&copy; Todos los derechos reservados por Ingenity Dev Studio</h6>
+        </article>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@font-face{
+    font-family: fuente-logo;
+    src: url("../fuente/Doctor\ Glitch.otf");
+}
+
+body{
+    font-family: "Montserrat", sans-serif !important;
+
+}
+
+/*navbar*/
+.nav-item:hover {
+    background: rgb(249, 97, 42);
+}
+.dropdown-menu li:hover {
+    background: rgb(249, 97, 42);
+}
+.dropdown-menu a:hover {
+    background-color: transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+    margin-top: 20px;
+    left: 0;
+    display: block;
+}
+
+.logo-nav {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 10px;
+    background-image: linear-gradient(180deg, #abfaf2 0, #8feae6 25%, #6cd8d8 50%, #41c6cb 75%, #00b6c1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "fuente-logo";
+    cursor: pointer;
+}
+
+.img-login{
+    width: 30px;
+}
+
+.pixie-nav {
+    width: 100%;
+}
+#checkTerms {
+    margin-top: 12px;
+}
+
+.encabezado{
+    margin-top: 10 px;
+    font-size: xxx-large;
+    color:  rgb(249, 97, 42);
+    margin-left: 30px;
+
+
+}
+.precio-producto{
+    
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.marca-producto{
+    
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.btn{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(249, 97, 42);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+h2 {
+    color: black !important;
+}
+.logo-texto {
+    font-size: 60px;
+    font-weight: bolder;
+    margin-right: 10px;
+    background-image: linear-gradient(180deg, #abfaf2 0, #8feae6 25%, #6cd8d8 50%, #41c6cb 75%, #00b6c1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "fuente-logo";
+}
