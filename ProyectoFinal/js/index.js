@@ -1,4 +1,4 @@
-const carga_producto = [
+export const carga_producto = [
   {
     id: 1,
     foto: "../img/wildhearts.jpg",
@@ -74,6 +74,8 @@ const carga_producto = [
   },
 ];
 
+// ----------------------------
+
 // window.onload = function () {
 //   const datosAlmacenados = localStorage.getItem(carga_producto);
 
@@ -81,6 +83,8 @@ const carga_producto = [
 //     localStorage.setItem(carga_producto, JSON.stringify(carga_producto));
 //   }
 // };
+
+// ----------------------------
 
 const local_storage_videojuego = {
   productos: "productos",
@@ -105,12 +109,3 @@ function almacenarDatos(videojuego_clave, videojuego) {
 
 // ------------------
 
-// // function Url(id) {
-// //   return `./páginas/producto.html?id=${id}`;
-// // }
-
-// // let url = "./páginas/producto.html?" + id;
-
-// // document.getElementById(
-// //   "contenedor_url"
-// // ).innerHTML = `<a class="text-decoration-none text-white" href="./páginas/producto.html?id=${id}">ver detalle</a>`;
