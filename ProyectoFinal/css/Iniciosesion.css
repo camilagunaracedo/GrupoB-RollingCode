@@ -39,12 +39,37 @@ body {
     width: 30px;
 }
 
+#logout, #administrar 
+ {
+    display: none;
+}
+
 .pixie-nav {
     width: 100%;
 }
-.form-inicio-sesion{
-    margin-top: 100px;
+
+/* IMAGEN Y FORMULARIO */
+
+.img {
+    width: 100%;
+    zoom: 120%;
 }
+
+
+.fondo-form {
+    background-color: #abfaf252;
+    width: 70%;
+    height: auto;
+    padding-top: 9%;
+}
+
+.form {
+    box-shadow: #00b7c19c 2px;
+    background-color: #fff;
+    box-shadow: 5px 7px 28px -12px rgba(0,0,0,1);
+}
+
+
 /*footer*/
 footer a {
     font-weight: 100 ;
