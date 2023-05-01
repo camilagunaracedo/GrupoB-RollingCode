@@ -38,6 +38,12 @@ btnlogin.addEventListener("click", function() {
     }
 })
 
+btnlogout.addEventListener("click", function() {
+    figurelogin.style.display = "block";
+    btnlogout.style.display = "none";
+    administrar.style.display = "none";
+})
+
 
 class Usuario {
     mail = "";

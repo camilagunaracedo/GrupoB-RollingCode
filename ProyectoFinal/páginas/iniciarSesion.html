@@ -21,127 +21,27 @@
     ></script>
     <link rel="stylesheet" href="../css/Iniciosesion.css" />
   </head>
-  <header>
-    <nav></nav>
-    <!--navbar 2-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 fixed-top">
-      <div class="container-fluid">
-        <a class="text-white logo-nav ms-2 py-2" href="../index.html"
-          >Pixies Games</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-lg-0">
-            <li class="nav-item p-3">
-              <a
-                class="nav-link text-white"
-                aria-current="page"
-                href="../index.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item p-3">
-              <a
-                class="nav-link text-white"
-                aria-current="page"
-                href="../páginas/nosotros.html"
-                >Nosotros</a
-              >
-            </li>
-
-            <li class="nav-item dropdown p-3">
-              <a
-                class="nav-link text-white dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Juegos
-              </a>
-              <ul class="dropdown-menu nav-item-drop bg-dark">
-                <li class="p-2">
-                  <a
-                    class="p-1 dropdown-item text-white"
-                    href="./páginas/accion.html"
-                    >Accion</a
-                  >
-                </li>
-                <li class="p-2">
-                  <a
-                    class="p-1 dropdown-item text-white"
-                    href="./páginas/aventura.html"
-                    >Aventura</a
-                  >
-                </li>
-                <li class="p-2">
-                  <a class="p-1 dropdown-item text-white" href="#">Deporte</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item p-3">
-              <a
-                class="nav-link text-white"
-                aria-current="page"
-                href="./páginas/contacto.html"
-                >Contacto</a
-              >
-            </li>
-          </ul>
-          <div class="d-flex">
-            <figure class="me-4 my-auto img-login">
-              <a href="./páginas/iniciarSesion.html">
-                <img
-                  class="ms-2 w-100"
-                  src="../img/icons8-user-40.png"
-                  alt=""
-                />
-              </a>
-            </figure>
-            <figure class="me-4 my-auto img-login">
-              <a href="./páginas/carrito.html">
-                <img
-                  class="ms-2 w-100"
-                  src="../img/icons8-comprar-50.png"
-                  alt=""
-                />
-              </a>
-            </figure>
-          </div>
-          <form class="d-flex my-3" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              class="btn btn-outline-success btn-dark text-white"
-              type="submit"
-            >
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!--fin navbar 2-->
-  </header>
-
   <body>
     <header>
-      <nav></nav>
-      <!--navbar 2-->
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 fixed-top">
         <div class="container-fluid">
           <a class="text-white logo-nav ms-2 py-2" href="../index.html"
@@ -229,7 +129,7 @@
                   />
                 </a>
               </figure>
-              <button class="btn btn-sm btn-danger" id="logout">Cerrar Sesión</button>
+              <button class="btn btn-sm btn-danger" id="logout" data-bs-toggle="modal" data-bs-target="#exampleModal">Cerrar Sesión</button>
               <figure class="me-4 my-auto img-login">
                 <a href="../páginas/carrito.html">
                   <img
@@ -257,7 +157,7 @@
           </div>
         </div>
       </nav>
-      <!--fin navbar 2-->
+      <!--FIN NAVBAR-->
     </header>
 
     <div class="container-fluid p-0 d-flex">
@@ -279,7 +179,7 @@
                 Nunca compartiremos tu contraseña con nadie
               </div>
             </div>
-            <button type="button" id="login" class="btn btn-primary col-12 scale-up-hor-left">Iniciar Sesión</button>
+            <button type="button" id="login" class="btn btn-primary col-12">Iniciar Sesión</button>
             <div class="my-3">
               <p class="text-center"><a href="./error.html">Recuperar Contraseña</a></p> <hr>
               <p class="text-center">No tienes cuenta? <a href="./registro.html">Registrate</a></p>
