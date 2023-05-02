@@ -168,8 +168,8 @@ h2 {
 }
 
 .imagen {
-    margin-left: 20px;
-    margin-top: 50px;
+  margin-left: 20px;
+  margin-top: 50px;
 }
 
 .informacion_detalle {
@@ -186,6 +186,10 @@ h2 {
 }
 
 .nombre_detalle {
+  margin-bottom: 80px;
+}
+
+.precio_detalle {
   margin-bottom: 20px;
 }
 
@@ -260,8 +264,8 @@ span {
 }
 
 .botones_detalle button {
-    width: 100%;
-  height: 40px; 
+  width: 100%;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,8 +281,8 @@ span {
 }
 
 .boton_agregar:hover {
-    background-color: rgba(255, 152, 114, 0.397);
-    color: rgb(249, 97, 42);
+  background-color: rgba(255, 152, 114, 0.397);
+  color: rgb(249, 97, 42);
 }
 
 /*Modal carrito de compra*/
@@ -389,5 +393,9 @@ span {
 i {
   color: rgba(249, 97, 42, 0.705);
   margin-right: 4px;
+}
+
+.descripcion {
+  margin-left: 100px;
 }
 /*Fin contenedor foto e info*/

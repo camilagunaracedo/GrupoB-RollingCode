@@ -1,7 +1,8 @@
-export const carga_producto = [
+const carga_producto = [
   {
     id: 1,
     foto: "../img/wildhearts.jpg",
+    foto_videojuego: "https://www.cdmarket.com.ar/Image/0/400_400-938127.jpg",
     nombre: "Wild Hearts",
     categoria: "",
     descripcion: `Wild Hearts es una novedad del género de caza donde la tecnología te da una oportunidad de luchar 
@@ -14,6 +15,8 @@ export const carga_producto = [
   {
     id: 2,
     foto: "../img/deadspace.jpg",
+    foto_videojuego:
+      "https://www.cdmarket.com.ar/Image/0/400_400-61eRp4xzR1L._AC_.jpg",
     nombre: "Dead Space 2",
     categoria: "Horror, supervivencia",
     descripcion: `Dead Space 2 es un videojuego de Horror de supervivencia en tercera persona, 
@@ -29,6 +32,8 @@ export const carga_producto = [
   {
     id: 3,
     foto: "../img/nfs.jpg",
+    foto_videojuego:
+      "https://www.cdmarket.com.ar/Image/0/400_400-NEED_FOR_SPEED_UNBOUND_PS5.jpg",
     nombre: "NFS Unbound",
     categoria: "Carrera",
     descripcion: `Need for Speed Unbound es un videojuego de conducción a cargo de Criterion Games y Electronic Arts
@@ -41,6 +46,8 @@ export const carga_producto = [
   {
     id: 4,
     foto: "../img/sims4.jpg",
+    foto_videojuego:
+      "https://http2.mlstatic.com/D_NQ_NP_722627-MLA50054130043_052022-V.webp",
     nombre: "Los Sims 4",
     categoria: "Simulación social",
     descripcion: `Los Sims 4 es el esperadísimo juego de simulación social que permite jugar a la vida como nunca antes.
@@ -52,6 +59,7 @@ export const carga_producto = [
   {
     id: 5,
     foto: "../img/apex.jpg",
+    foto_videojuego: "../img/apex.jpg",
     nombre: "Apex Legends",
     categoria: "Acción",
     descripcion: `Apex Legends es un shooter de Battle Royale basado en escuadrones y con énfasis en los personajes 
@@ -63,6 +71,7 @@ export const carga_producto = [
   {
     id: 6,
     foto: "../img/sackboy.jpg",
+    foto_videojuego: "https://www.cdmarket.com.ar/Image/0/400_400-PS4_SCE_305343.jpg",
     nombre: "Sackboy",
     categoria: "Simulación social",
     descripcion: `Sackboy: Una aventura a lo grande, el simpático plataformas en tres dimensiones que fue lanzado 
@@ -108,4 +117,3 @@ function almacenarDatos(videojuego_clave, videojuego) {
 }
 
 // ------------------
-

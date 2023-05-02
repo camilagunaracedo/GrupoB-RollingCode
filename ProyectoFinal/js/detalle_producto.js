@@ -1,43 +1,48 @@
 const detalle_juego = document.getElementById("detalle_juego");
+let meGustaClicked = false;
 
-// const urlParams = new URLSearchParams(window.location.search);
-// const paramsId = urlParams.get("id");
+const urlParams = new URLSearchParams(window.location.search);
+const paramsId = urlParams.get("id");
 
-import { carga_producto } from "./index.js";
+//------------------------------------
 
-const videojuego = localStorage.getItem("almacenarDatos");
+// import { carga_producto } from "./index.js";
 
-let localstorage_videojuego;
+// const videojuego = localStorage.getItem("almacenarDatos");
 
-if (videojuego) {
-  const localstorage_videojuego = JSON.parse(videojuego);
-} else {
-  localstorage_videojuego = carga_producto;
-}
+// let localstorage_videojuego;
 
-function buscarVideojuegoPorId(idVideojuego) {
-  return carga_producto.filter(
-    (obj_videojuego) => obj_videojuego.id === idVideojuego
-  );
-}
+// if (videojuego) {
+//   const localstorage_videojuego = JSON.parse(videojuego);
+// } else {
+//   localstorage_videojuego = carga_producto;
+// }
 
-buscarVideojuegoPorId = buscarVideojuegoPorId[0];
+// function buscarVideojuegoPorId(idVideojuego) {
+//   return carga_producto.filter(
+//     (obj_videojuego) => obj_videojuego.id === idVideojuego
+//   );
+// }
 
-console.log(buscarVideojuegoPorId);
+// buscarVideojuegoPorId = buscarVideojuegoPorId[0];
 
-// const local_storage_videojuego = {
-//   productos: "productos",
-// };
+// console.log(buscarVideojuegoPorId);
 
-// const videojuego = JSON.parse(
-//   localStorage.getItem(local_storage_videojuego.productos)
-// );
+//------------------------------------
 
-// let juegoFiltrado = videojuego.filter(
-//   (juego) => juego.id === parseInt(paramsId)
-// );
+const local_storage_videojuego = {
+  productos: "productos",
+};
 
-// juegoFiltrado = juegoFiltrado[0];
+const videojuego = JSON.parse(
+  localStorage.getItem(local_storage_videojuego.productos)
+);
+
+let juegoFiltrado = videojuego.filter(
+  (juego) => juego.id === parseInt(paramsId)
+);
+
+juegoFiltrado = juegoFiltrado[0];
 
 detalle_juego.innerHTML = CrearProducto();
 
@@ -65,11 +70,13 @@ function CrearProducto() {
   return `<div class="container tarjeta_detalle">
       <div class="row imagen">
         <div class="foto_detalle" style="width: 550px; height: 450px; background-image: url(${juegoFiltrado.foto}); background-size: cover; background-position: center;">
-      </div>
+        </div>
         <div class="col-lg-5 col-12 informacion_detalle">
           <div class="row info_detalle">
-            <h3 class="nombre_detalle">${juegoFiltrado.nombre}</h3>
-            <p class="descripcion_detalle" style="text-align: justify;">${juegoFiltrado.descripcion}</p>
+            <div class="row div_meGusta">
+              <h3 class="col-10 nombre_detalle">${juegoFiltrado.nombre}</h3>
+              <img class="col-2 meGusta" src="../img/3643770-favorite-heart-like-likes-love-loved_113432.svg" width="24" height="24" />
+            </div>
             <h4 class="precio_detalle">$${juegoFiltrado.precio_str}</h4>
             <span class="link"
               ><a
@@ -100,8 +107,13 @@ function CrearProducto() {
           </div>
         </div>
       </div>
+    </div>    
+    <div class="container descripcion">      
+      <p class="col-9  descripcion_detalle" style="text-align: justify;"><b>Descripción: </b>${juegoFiltrado.descripcion}</p>
     </div>`;
 }
+
+
 
 /*<div class="container contenedor_contenido">
       <!--Contenedor foto e info-->
@@ -112,7 +124,7 @@ function CrearProducto() {
           </div>
             */
 
-const meGusta = document.getElementById("me_gusta");
+const meGusta = document.getElementById("meGusta");
 meGusta?.addEventListener("click", () => {
   if (!meGustaClicked) {
     meGusta.style.fill = "f24244";
