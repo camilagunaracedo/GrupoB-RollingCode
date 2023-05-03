@@ -42,6 +42,7 @@ btnlogout.addEventListener("click", function() {
     figurelogin.style.display = "block";
     btnlogout.style.display = "none";
     administrar.style.display = "none";
+    localStorage.removeItem('sesion');
 })
 
 
