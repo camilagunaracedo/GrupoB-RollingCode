@@ -107,57 +107,6 @@ h2 {
 
 /*TARJETAS*/
 
-/* .tarjeta_detalle {
-    display: flex;
-    flex-direction: row;
-    margin-top: 60px;
-    margin-bottom: 130px;
-}
-
-.foto_detalle {
-    width: 500px;
-    height: auto;
-    margin-left: 40px;
-}
-
-.info_detalle {
-    border: .5px solid rgb(249, 97, 42);
-    border-radius: 6px;
-    width: 430px;
-    margin-left: 30px;
-    padding: 10px;
-}
-
-.nombre_detalle {
-    font-weight: bold;
-}
-
-.precio_detalle {
-    font-weight: bold;
-}
-
-.boton_comprar {
-    background-color: rgb(249, 97, 42);
-    width: 400px;
-}
-
-.boton_comprar:hover {
-    background-color: rgba(233, 126, 88, 0.795);
-    color: white;
-}
-
-.boton_agregar {
-    background-color: white;
-    border: 1px solid rgb(249, 97, 42);
-    color: rgb(249, 97, 42);
-    width: 400px;
-}
-
-.boton_agregar:hover {
-    background-color: rgba(255, 174, 145, 0.795);
-    color: white;
-} */
-
 /*Contenedor foto e info*/
 .tarjeta_detalle {
   display: flex;
@@ -399,3 +348,25 @@ i {
   margin-left: 100px;
 }
 /*Fin contenedor foto e info*/
+
+/*Media queries*/
+@media (max-width: 980px) and (orientation: portrait) {
+  .informacion_detalle {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .botones_detalle {
+    width: 90%;
+  }
+
+  .informacion_detalle {
+    margin-left: 10px;
+  }
+
+  .tarjeta_detalle {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/*Fin media queries*/
