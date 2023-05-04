@@ -83,18 +83,6 @@ const carga_producto = [
   },
 ];
 
-// ----------------------------
-
-// window.onload = function () {
-//   const datosAlmacenados = localStorage.getItem(carga_producto);
-
-//   if (!datosAlmacenados) {
-//     localStorage.setItem(carga_producto, JSON.stringify(carga_producto));
-//   }
-// };
-
-// ----------------------------
-
 const local_storage_videojuego = {
   productos: "productos",
 };
@@ -116,4 +104,3 @@ function almacenarDatos(videojuego_clave, videojuego) {
   localStorage.setItem(videojuego_clave, JSON.stringify(videojuego));
 }
 
-// ------------------
