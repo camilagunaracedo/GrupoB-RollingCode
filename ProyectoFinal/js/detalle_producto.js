@@ -65,48 +65,8 @@ function CrearProducto() {
       </div>
     </div>    
     <div class="container descripcion">      
-      <p class="col-9  descripcion_detalle" style="text-align: justify;"><b>Descripción: </b>${juegoFiltrado.descripcion}</p>
-    </div>
-    
-    <!-- Modal medios de pago -->
-    <div class="modal modal-lg modal_medio_de_pago" id="abrir_modal">
-      <div class="modal-header">
-        <h5 class="modal-title">Medios de pago</h5>
-        <a
-          href="#"
-        ><button
-           id="boton_cerrar"
-           type="button"
-           class="btn-close"
-           data-bs-dismiss="modal"
-           aria-label="Close"
-         ></button
-        ></a>
-      </div>
-      <div class="modal-body">
-        <h2 class="fs-5">Transferencia bancaria</h2>
-        <hr />
-        <h2 class="fs-5">Tarjeta de débito</h2>
-        <hr />
-        <h2 class="fs-5">Tarjetas de crédito</h2>
-        <p>3 y 6 cuotas <b>sin interés</b></p>
-        <img src="../img/visa@2x.png" /><img
-          src="../img/mastercard@2x.png"
-        /><img src="../img/naranja@2x.png" /><img
-          src="../img/amex@2x.png"
-        />
-        <p>
-          <a
-            id="volver"
-            href="#"
-            data-bs-toggle="tooltip"
-            title="Volver al producto"
-            >Volver al producto</a
-          >
-        </p>
-      </div>
-    </div>
-    <!--Fin modal medios de pago-->`;
+      <p class="col-lg-9 col-12  descripcion_detalle" style="text-align: justify;"><b>Descripción: </b>${juegoFiltrado.descripcion}</p>
+    </div>`;
 }
 
 const meGusta = document.getElementById("meGusta");
@@ -122,17 +82,5 @@ meGusta?.addEventListener("click", () => {
     meGustaClicked = false;
   }
 });
-
-
-// const botonCerrar = document.getElementById("boton_cerrar");
-// botonCerrar.addEventListener("click", cerrarModal);
-
-// function cerrarModal(event) {
-//   event.stopPropagation();
-//   const modal = document.getElementById("abrir_modal");
-//   modal.style.display = "none";
-// }
-
-
 
 
