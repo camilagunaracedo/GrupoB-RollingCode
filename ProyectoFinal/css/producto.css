@@ -95,3 +95,73 @@ h2 {
     -webkit-text-fill-color: transparent;
     font-family: "fuente-logo";
 }
+
+/*TARJETAS*/
+
+nav {
+    margin-bottom: 40px;
+}
+
+#tarjeta_juego {
+    justify-content: center;
+}
+
+#container-categorias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-categorias h2 {
+    color: rgb(249, 97, 42) !important; 
+    margin-bottom: 30px;
+}
+
+.tarjeta {
+    width: 280px !important;
+    height: 350px !important;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.espacio_imagen {
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-imagen {
+    display: flex;
+    justify-content: center;
+}
+
+.a-imagen:hover {
+    scale: 105%;
+}
+
+.imagen-tarjeta {
+    width: 180px !important;
+}
+
+.cuerpo-tarjeta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 25px;
+}
+
+.titulo-tarjeta {
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+
+
