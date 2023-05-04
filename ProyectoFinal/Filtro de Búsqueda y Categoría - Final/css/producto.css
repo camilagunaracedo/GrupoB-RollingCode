@@ -1,0 +1,48 @@
+
+body{
+    font-family:Arial, Helvetica, sans-serif
+
+}
+#checkTerms {
+    margin-top: 12px;
+}
+
+.encabezado{
+    margin-top: 10 px;
+    font-size: xxx-large;
+    color:  rgb(249, 97, 42);
+    margin-left: 30px;
+ 
+   
+
+}
+.precio-producto{
+    
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.marca-producto{
+    
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.btn{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(249, 97, 42);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+h2 {
+    color: black !important;
+}
+  

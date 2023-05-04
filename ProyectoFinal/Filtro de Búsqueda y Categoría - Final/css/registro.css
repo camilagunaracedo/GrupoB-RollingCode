@@ -1,0 +1,30 @@
+* {
+    margin: 8px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(247, 153, 121);
+}
+#checkTerms {
+    margin-top: 12px;
+}
+
+.titulos{
+    font-size: xxx-large;
+    color:  rgb(249, 97, 42);
+    margin-left: 10px;
+
+}
+
+.formreg{
+    background-color:white;
+    margin: auto;
+    margin-top: 100px;
+    width: 800px;
+    font-size: small;
+    text-align: justify;
+    text-align: start;
+
+}
+

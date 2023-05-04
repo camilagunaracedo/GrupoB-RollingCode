@@ -1,0 +1,16 @@
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.img-fluid {
+    width: 45%;
+}
+.text {
+    text-align: center;
+}
+
+
+
