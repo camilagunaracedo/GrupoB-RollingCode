@@ -5,13 +5,10 @@
 
 body {
   font-family: "Montserrat", sans-serif !important;
-  background: url(/PixiesGames/ProyectoFinal/img/3554-videojuegos.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-color: #abfaf252;
   margin-top: 0px !important;
 }
+
 #checkTerms {
   margin-top: 12px;
 }
@@ -67,4 +64,30 @@ body {
 
 .pixie-nav {
   width: 100%;
+}
+
+
+/* FORMULARIO */
+
+body
+
+.container {
+  max-width: 38em;
+  padding: 1em 3em 2em 3em;
+  margin-top: 7em;
+  margin-bottom: 2em;
+  background-color: #fff;
+  border-radius: 4.2px;
+  box-shadow: 5px 7px 28px -12px rgba(0,0,0,1);
+}
+
+.text-terminos {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.815);
+  font-weight: bold;
+}
+
+.text-terminos:hover {
+  color: rgba(255, 255, 255, 0.879);
+  transition: 0.5s;
 }
